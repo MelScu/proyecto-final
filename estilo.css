@@ -1,0 +1,92 @@
+body {
+    background-color: rgb(169, 201, 169);
+    color: #e7e0c4;
+    text-align: center;
+    font-style: initial;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0%;
+
+
+
+}
+
+#titulo-principal {
+    bottom: 30px;
+}
+
+main {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(auto)
+}
+
+#quienessomos {
+    background-color: #6a8267;
+    grid-row: 3;
+    grid-column: 1;
+    text-align: center;
+    height: 70%;
+
+}
+
+#nuestrovivero {
+    background-color: #6a8267;
+    grid-column: 2;
+    grid-row: 3;
+    text-align: center;
+    height: 70%;
+
+
+}
+
+#cotización {
+    background-color: #6a8267;
+    grid-row: 3;
+    grid-column: 3/4;
+    text-align: center;
+    height: 70%;
+
+}
+
+#quehacemos1 {
+    grid-row: 4;
+    grid-column: 1/4;
+    text-align: center;
+    color: black;
+    font-style: oblique;
+    font-weight: lighter;
+    height: 30%;
+
+}
+
+#quehacemos2 {
+    grid-row: 5;
+    grid-column: 1/4;
+    text-align: center;
+    color: black;
+    font-style: oblique;
+    font-weight: lighter;
+
+}
+
+#proyectosterminados {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    background-color: #6a8267;
+    grid-column: 1/4;
+    grid-row: 6;
+    text-align: center;
+    height: 50%;
+
+
+}
+
+footer {
+    background-color: #6a8267;
+    display: grid;
+    position: fixed;
+    align-items: end;
+    top: 1000px;
+}
