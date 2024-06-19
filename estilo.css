@@ -1,5 +1,6 @@
 body {
     background-color: rgb(169, 201, 169);
+    display: grid;
     color: #e7e0c4;
     text-align: center;
     font-style: initial;
@@ -14,14 +15,9 @@ body {
     bottom: 30px;
 }
 
-main {
-    display: grid;
-    text-align: center;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: minmax(auto)
-}
 
-#quienessomos {
+
+.quienessomos {
     background-color: #6a8267;
     grid-row: 3;
     grid-column: 1;
@@ -30,17 +26,16 @@ main {
 
 }
 
-#nuestrovivero {
+.nuestrovivero {
     background-color: #6a8267;
     grid-column: 2;
     grid-row: 3;
     text-align: center;
     height: 70%;
 
-
 }
 
-#cotización {
+.cotización {
     background-color: #6a8267;
     grid-row: 3;
     grid-column: 3/4;
@@ -57,36 +52,73 @@ main {
     font-style: oblique;
     font-weight: lighter;
     height: 30%;
+    margin-top: 100px;
 
 }
 
-#quehacemos2 {
+#quehacemos2{
     grid-row: 5;
     grid-column: 1/4;
     text-align: center;
     color: black;
     font-style: oblique;
     font-weight: lighter;
+    margin-bottom: 100px;
 
 }
 
-#proyectosterminados {
+#contenedorproyectosterminados{
     display: grid;
-    justify-items: center;
-    text-align: center;
+    grid-template-columns: 3, 1fr;
+    grid-template-rows: 3, auto;
+    gap: 5px;
+    margin-bottom: 300px;
+}
+
+
+
+.tamañoimg{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+   
+}
+
+#animacion-imagen:hover{
+    animation: agrandar 10s infinite;
+}
+
+@keyframes agrandar {
+
+    50%{
+        transform: scale(1);
+    }
+    
+}
+
+.textoimagenes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+}
+
+.tituloproyectos{
     background-color: #6a8267;
     grid-column: 1/4;
-    grid-row: 6;
-    text-align: center;
-    height: 50%;
-
-
+    grid-row: 1;
+    width: auto;
 }
 
-footer {
+
+footer{
     background-color: #6a8267;
     display: grid;
-    position: fixed;
-    align-items: end;
     top: 1000px;
+}
+
+#mapagoogle{
+    display: grid;
+    align-items: center;
 }
